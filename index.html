@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS (IT Solution) — Solusi Kebutuhan Harian, Kuliner & Jasa Akademik</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container container">
+            <a href="#home" class="logo">
+                <span class="logo-badge">ITS</span>
+                <div class="logo-text">
+                    <strong>IT SOLUTION</strong>
+                    <small>Store & Services</small>
+                </div>
+            </a>
+
+            <!-- NAV LINKS -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#layanan" class="nav-link">Jasa Layanan</a>
+                <a href="#produk" class="nav-link">Katalog Produk</a>
+                <a href="#tentang" class="nav-link">Tentang Kami</a>
+                <a href="#kontak" class="nav-link">Kontak</a>
+            </nav>
+
+            <!-- NAV ACTIONS -->
+            <div class="nav-actions">
+                <!-- Settings Button: Atur Nomor WA -->
+                <button class="btn-wa-setting" id="btnOpenWaModal" title="Atur Nomor WhatsApp Toko">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                        </path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <span>Atur WA</span>
+                </button>
+
+                <!-- Cart Button -->
+                <button class="cart-btn" id="btnCartToggle" aria-label="Buka Keranjang Belanja">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-label">Keranjang</span>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+
+                <!-- Hamburger Button (Mobile) -->
+                <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Solusi Lengkap Mahasiswa & Kampus</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Kebutuhan Harian, Kuliner & <span>Jasa Akademik</span> dalam Satu Tempat
+                    </h1>
+
+                    <p class="hero-description">
+                        <strong>ITS (IT Solution)</strong> menghadirkan 39 katalog produk kebutuhan harian mulai dari
+                        minuman dingin, camilan lezat, alat tulis & ATK, racikan kopi artisan <strong>Brewasa</strong>,
+                        hingga layanan jasa edit, desain, pembuatan PPT, dan percetakan cepat.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#produk" class="btn btn-primary btn-lg">
+                            <span>Jelajahi 39 Produk</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#layanan" class="btn btn-outline-white btn-lg">
+                            <span>Lihat Jasa Layanan</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-box">
+                            <strong>39</strong>
+                            <span>Katalog Produk</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-box">
+                            <strong>6+</strong>
+                            <span>Layanan Jasa</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-box">
+                            <strong>2 Cara</strong>
+                            <span>WA & Web Checkout</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-featured">
+                        <div class="featured-header">
+                            <span class="tag-live">● Buka Setiap Hari</span>
+                            <span class="tag-badge">Official Store</span>
+                        </div>
+                        <div class="featured-logo-box">
+                            <div class="hero-icon-ring">ITS</div>
+                            <h3>IT SOLUTION</h3>
+                            <p>Campus Store & Professional Services</p>
+                        </div>
+                        <div class="featured-categories-grid">
+                            <div class="quick-pill">🥤 Minuman Dingin</div>
+                            <div class="quick-pill">🍪 Camilan & Snack</div>
+                            <div class="quick-pill">✏️ Alat Tulis (ATK)</div>
+                            <div class="quick-pill">☕ Brewasa Coffee</div>
+                            <div class="quick-pill">🎨 Jasa Desain & PPT</div>
+                            <div class="quick-pill">🖨️ Print & Jilid</div>
+                        </div>
+                        <div class="featured-footer">
+                            <small>Pesan cepat langsung via WhatsApp atau Checkout Website</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION JASA LAYANAN -->
+        <section class="services-section" id="layanan">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="section-subtitle">PROFESIONAL & CEPAT</span>
+                    <h2>Jasa Layanan Akademik & Percetakan</h2>
+                    <p>Bantu tuntaskan tugas kuliah, skripsi, presentasi, dan cetak dokumen tanpa pusing dengan harga
+                        bersahabat bagi mahasiswa.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Jasa Edit -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">✍️</div>
+                            <span class="service-tag">Populer</span>
+                        </div>
+                        <h3>Jasa Edit & Parafrase</h3>
+                        <p>Koreksi tata bahasa (PUEBI), cek turnitin/plagiasi, penyesuaian format template jurnal,
+                            makalah, dan skripsi agar rapi dan bebas typo.</p>
+                        <div class="service-features">
+                            <span>✓ Cek & Turunkan Turnitin</span>
+                            <span>✓ Format Sesuai Panduan Dosen</span>
+                        </div>
+                        <div class="service-footer">
+                            <div class="service-price">Mulai Rp 10.000 / bab</div>
+                            <button class="btn btn-secondary btn-sm"
+                                onclick="orderService('Jasa Edit & Parafrase')">Pesan Jasa</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Jasa Desain -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">🎨</div>
+                            <span class="service-tag">Kreatif</span>
+                        </div>
+                        <h3>Jasa Desain Grafis</h3>
+                        <p>Pembuatan poster kegiatan, feed & story Instagram, banner seminar, sertifikat kegiatan,
+                            pamflet event, dan desain branding organisasi.</p>
+                        <div class="service-features">
+                            <span>✓ Revisi Fleksibel</span>
+                            <span>✓ File Master HD (PNG/PDF/PSD)</span>
+                        </div>
+                        <div class="service-footer">
+                            <div class="service-price">Mulai Rp 20.000 / desain</div>
+                            <button class="btn btn-secondary btn-sm" onclick="orderService('Jasa Desain Grafis')">Pesan
+                                Jasa</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Pembuatan PPT -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">📊</div>
+                            <span class="service-tag">Terlaris</span>
+                        </div>
+                        <h3>Pembuatan Slide PPT</h3>
+                        <p>Desain slide presentasi modern, aesthetic, dan interaktif untuk sidang skripsi, seminar
+                            proposal, tugas kelompok, maupun pitch deck lomba.</p>
+                        <div class="service-features">
+                            <span>✓ Desain Clean & Visual Menarik</span>
+                            <span>✓ Lengkap Animasi & Transisi</span>
+                        </div>
+                        <div class="service-footer">
+                            <div class="service-price">Mulai Rp 3.000 / slide</div>
+                            <button class="btn btn-secondary btn-sm" onclick="orderService('Pembuatan Slide PPT')">Pesan
+                                Jasa</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Pengetikan -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">⌨️</div>
+                            <span class="service-tag">Kilat</span>
+                        </div>
+                        <h3>Jasa Pengetikan Dokumen</h3>
+                        <p>Pengetikan kilat materi catatan tulisan tangan, modul, buku, kuisioner, transkrip rekaman
+                            suara/audio ke dokumen Word & Excel rapi.</p>
+                        <div class="service-features">
+                            <span>✓ Pengerjaan Cepat & Teliti</span>
+                            <span>✓ Format Tabel & Persamaan Rapi</span>
+                        </div>
+                        <div class="service-footer">
+                            <div class="service-price">Mulai Rp 2.500 / lembar</div>
+                            <button class="btn btn-secondary btn-sm"
+                                onclick="orderService('Jasa Pengetikan Dokumen')">Pesan Jasa</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Pendampingan Tugas -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">👨‍💻</div>
+                            <span class="service-tag">Eksklusif</span>
+                        </div>
+                        <h3>Pendampingan Tugas & Coding</h3>
+                        <p>Mentoring pengerjaan tugas pemrograman (HTML, CSS, JS, Python, Database), logika algoritma,
+                            asistensi tugas praktikum, dan konsultasi skripsi IT.</p>
+                        <div class="service-features">
+                            <span>✓ Diskusi 1-on-1 via WhatsApp/Meet</span>
+                            <span>✓ Penjelasan Kode Sampai Paham</span>
+                        </div>
+                        <div class="service-footer">
+                            <div class="service-price">Mulai Rp 25.000 / sesi</div>
+                            <button class="btn btn-secondary btn-sm"
+                                onclick="orderService('Pendampingan Tugas & Coding')">Pesan Jasa</button>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Print dan Jilid -->
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">📚</div>
+                            <span class="service-tag">Ready Di Toko</span>
+                        </div>
+                        <h3>Jasa Print & Jilid Skripsi</h3>
+                        <p>Layanan cetak hitam putih & warna kilat kertas HVS 70/80gsm, jilid lakban mika bening, spiral
+                            kawat, hingga jilid hardcover skripsi berlogo emas.</p>
+                        <div class="service-features">
+                            <span>✓ Cetak Tajam Anti Luntur</span>
+                            <span>✓ Jilid Presisi & Kuat</span>
+                        </div>
+                        <div class="service-footer">
+                            <div class="service-price">Print Rp 500 | Jilid Rp 2.000</div>
+                            <button class="btn btn-secondary btn-sm" onclick="orderService('Jasa Print & Jilid')">Pesan
+                                Jasa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION KATALOG 39 PRODUK -->
+        <section class="produk-section" id="produk">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="section-subtitle">KATALOG 39 PRODUK</span>
+                    <h2>Katalog Produk Lengkap ITS</h2>
+                    <p>Pilih aneka minuman segar, makanan, alat tulis (ATK), dan varian kopi seduh Brewasa favorit Anda.
+                    </p>
+                </div>
+
+                <!-- TOOLBAR PENCARIAN & FILTER KATEGORI -->
+                <div class="catalog-toolbar">
+                    <div class="search-box">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="searchInput"
+                            placeholder="Cari nama produk (misal: Ichitan, Americano, Tip X, Nextar)..."
+                            autocomplete="off">
+                        <button type="button" class="btn-clear-search" id="btnClearSearch"
+                            aria-label="Hapus pencarian">&times;</button>
+                    </div>
+
+                    <div class="filter-buttons" id="filterButtons">
+                        <button class="filter-btn active" data-category="Semua">
+                            <span>Semua Produk</span>
+                            <span class="filter-count" id="countSemua">39</span>
+                        </button>
+                        <button class="filter-btn" data-category="Minuman">
+                            <span>🥤 Minuman</span>
+                            <span class="filter-count" id="countMinuman">10</span>
+                        </button>
+                        <button class="filter-btn" data-category="Makanan">
+                            <span>🍪 Makanan</span>
+                            <span class="filter-count" id="countMakanan">6</span>
+                        </button>
+                        <button class="filter-btn" data-category="ATK">
+                            <span>✏️ Alat & ATK</span>
+                            <span class="filter-count" id="countATK">13</span>
+                        </button>
+                        <button class="filter-btn" data-category="Brewasa">
+                            <span>☕ Brewasa Coffee</span>
+                            <span class="filter-count" id="countBrewasa">10</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="results-info">
+                    <p id="resultsCount">Menampilkan seluruh 39 produk pilihan</p>
+                </div>
+
+                <!-- GRID 39 PRODUK -->
+                <div class="product-grid" id="productGrid">
+                    <!-- 39 Produk dimuat secara dinamis via script.js -->
+                </div>
+
+                <!-- EMPTY STATE -->
+                <div id="emptyMessage" class="empty-state">
+                    <div class="empty-icon">🔍</div>
+                    <h3>Produk tidak ditemukan</h3>
+                    <p>Tidak ada produk yang cocok dengan pencarian atau filter yang dipilih.</p>
+                    <button class="btn btn-secondary btn-sm" id="btnResetFilter">Tampilkan Semua 39 Produk</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION TENTANG KAMI -->
+        <section class="about-section" id="tentang">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="section-subtitle">TENTANG KAMI</span>
+                        <h2>Kenalkan, Kami adalah ITS (IT Solution)</h2>
+                        <p class="about-lead">
+                            <strong>ITS (IT Solution)</strong> adalah unit usaha dan layanan kreatif mahasiswa yang
+                            lahir untuk menjadi solusi satu pintu bagi seluruh kebutuhan akademik dan keseharian warga
+                            kampus.
+                        </p>
+                        <p>
+                            Kami mengintegrasikan toko harian dengan aneka snack dan minuman dingin segar, alat tulis
+                            kantor, lini kopi seduh artisan <strong>Brewasa</strong>, serta divisi layanan jasa
+                            profesional yang siap mendampingi pengerjaan tugas, desain grafis, pembuatan PPT, hingga
+                            percetakan berkas skripsi secara kilat dan rapi.
+                        </p>
+
+                        <div class="about-pillars">
+                            <div class="pillar-item">
+                                <div class="pillar-icon">⚡</div>
+                                <div>
+                                    <h4>Layanan Kilat & Ramah</h4>
+                                    <p>Pengerjaan cepat dan komunikasi fleksibel langsung melalui WhatsApp.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon">💰</div>
+                                <div>
+                                    <h4>Harga Ramah Mahasiswa</h4>
+                                    <p>Seluruh harga produk dan jasa disesuaikan dengan anggaran saku mahasiswa.</p>
+                                </div>
+                            </div>
+                            <div class="pillar-item">
+                                <div class="pillar-icon">🏆</div>
+                                <div>
+                                    <h4>Kualitas Terjamin</h4>
+                                    <p>Produk 100% original, cetakan tajam, dan pengerjaan jasa yang teliti.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card-box">
+                        <div class="about-stat-card primary">
+                            <span class="badge-accent">Unit Resmi</span>
+                            <h3>ITS Store & Services</h3>
+                            <p class="desc">Melayani pemesanan langsung di tempat maupun pemesanan online antar ke
+                                gedung/kelas kampus.</p>
+                            <hr class="card-divider">
+                            <div class="schedule-rows">
+                                <div class="schedule-row">
+                                    <span>Senin – Jumat</span>
+                                    <strong>07.30 – 17.00 WITA</strong>
+                                </div>
+                                <div class="schedule-row">
+                                    <span>Sabtu – Minggu</span>
+                                    <strong>08.30 – 18.00 WITA</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-brewasa-card">
+                            <div class="brewasa-badge">Signature Brand</div>
+                            <h3>Brewasa Artisan Coffee</h3>
+                            <p>Cita rasa racikan kopi espresso, aren latte, hazelnut, hingga butterscotch spesial
+                                racikan barista ITS untuk menemani sesi belajar Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION KONTAK -->
+        <section class="contact-section" id="kontak">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="section-subtitle">HUBUNGI KAMI</span>
+                    <h2>Konsultasi & Pemesanan Langsung</h2>
+                    <p>Punya kebutuhan pesanan dalam jumlah besar, tanya layanan jasa, atau ingin print berkas kilat?
+                        Hubungi tim kami sekarang.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Box -->
+                    <div class="contact-info-card">
+                        <h3>Kontak Resmi ITS</h3>
+                        <p class="contact-card-sub">Layanan pesan cepat responsif siap melayani setiap hari kerja.</p>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <label>WhatsApp CS Pemesanan</label>
+                                <strong id="activeWaDisplay">+62 857-5487-0448</strong>
+                                <button class="btn-text-edit" id="btnEditWaFromContact">Ubah Nomor</button>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <label>Email Resmi</label>
+                                <strong>hmpti14@gmail.com</strong>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <label>Lokasi Stand / Toko</label>
+                                <span>UNIVERSITAS ISLAM KALIMANTAN,JL.adhyaksa, gedung Teknologi Informasi Lantai 1,
+                                    Area Kampus</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-actions-row">
+                            <a href="#" id="contactWhatsapp" class="btn btn-primary btn-block" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                    </path>
+                                </svg>
+                                <span>Chat CS via WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Message Form -->
+                    <div class="contact-form-card">
+                        <h3>Kirim Pesan / Permintaan Jasa</h3>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Nama Lengkap</label>
+                                    <input type="text" id="contactName" placeholder="Contoh: Dimas Aditya" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactTopic">Kategori Keperluan</label>
+                                    <select id="contactTopic">
+                                        <option value="Tanya Produk & Stok">Tanya Produk & Stok Toko</option>
+                                        <option value="Order Jasa Edit & Parafrase">Order Jasa Edit / Turnitin</option>
+                                        <option value="Order Jasa Desain Grafis">Order Jasa Desain Grafis</option>
+                                        <option value="Order Jasa Slide PPT">Order Jasa Slide PPT</option>
+                                        <option value="Order Jasa Pengetikan">Order Jasa Pengetikan</option>
+                                        <option value="Order Pendampingan Tugas">Pendampingan Tugas / Coding</option>
+                                        <option value="Jasa Print & Jilid Skripsi">Print Dokumen & Jilid Skripsi
+                                        </option>
+                                        <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Pesan atau Deskripsi Kebutuhan</label>
+                                <textarea id="contactMessage" rows="4"
+                                    placeholder="Tuliskan rincian kebutuhan tugas, deadline, atau pertanyaan Anda..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                <span>Kirim Pesan Langsung ke WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <div class="logo footer-logo">
+                    <span class="logo-badge">ITS</span>
+                    <div class="logo-text">
+                        <strong>IT SOLUTION</strong>
+                        <small>Store & Services</small>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    Your Daily Needs, Our Solution. Menyediakan 39 produk minuman segar, camilan lezat, alat tulis
+                    (ATK), kopi Brewasa, serta 6 jasa akademik profesional.
+                </p>
+                <div class="footer-wa-indicator">
+                    <span>📱 CS WhatsApp:</span>
+                    <strong id="footerWaNumber">+62 857-5487-0448</strong>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Kategori 39 Produk</h4>
+                <ul class="footer-links">
+                    <li><a href="#produk" onclick="filterByCategory('Minuman')">Minuman Dingin (10 Item)</a></li>
+                    <li><a href="#produk" onclick="filterByCategory('Makanan')">Camilan & Snack (6 Item)</a></li>
+                    <li><a href="#produk" onclick="filterByCategory('ATK')">Alat & ATK (13 Item)</a></li>
+                    <li><a href="#produk" onclick="filterByCategory('Brewasa')">Brewasa Artisan (10 Item)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Jasa Layanan</h4>
+                <ul class="footer-links">
+                    <li><a href="#layanan">Jasa Edit & Parafrase</a></li>
+                    <li><a href="#layanan">Jasa Desain Grafis</a></li>
+                    <li><a href="#layanan">Pembuatan Slide PPT</a></li>
+                    <li><a href="#layanan">Jasa Pengetikan Cepat</a></li>
+                    <li><a href="#layanan">Pendampingan Tugas IT</a></li>
+                    <li><a href="#layanan">Print & Jilid Skripsi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigasi & Pesanan</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#produk">Katalog Lengkap</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#kontak">Hubungi Kami</a></li>
+                </ul>
+                <div class="footer-cart-quick">
+                    <button class="btn btn-outline-white btn-sm btn-block" id="btnFooterOpenCart">
+                        Buka Keranjang (<span class="footer-cart-count">0</span>)
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 ITS (IT Solution). Seluruh hak cipta dilindungi.</p>
+                <p class="credit">Desain Modern, Profesional, dan Aesthetic — Navy Blue & White</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SLIDE-OUT CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang Belanja">
+        <div class="cart-header">
+            <div class="cart-title-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <h3>Keranjang Belanja</h3>
+                <span class="cart-items-counter" id="drawerCartCount">0 item</span>
+            </div>
+            <button class="btn-close-drawer" id="btnCloseCart" aria-label="Tutup Keranjang">&times;</button>
+        </div>
+
+        <!-- LIST PRODUK DI KERANJANG -->
+        <div class="cart-items-list" id="cartItemsList">
+            <!-- Rendered by JavaScript -->
+        </div>
+
+        <!-- FOOTER KERANJANG & CHECKOUT ACTIONS -->
+        <div class="cart-footer">
+            <div class="cart-price-summary">
+                <div class="summary-row">
+                    <span>Jumlah Barang</span>
+                    <strong id="cartTotalItems">0 pcs</strong>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total Pembayaran</span>
+                    <strong id="cartTotalPrice" class="total-highlight">Rp0</strong>
+                </div>
+            </div>
+
+            <!-- FORM OPSIONAL CATATAN PEMESAN -->
+            <div class="cart-customer-notes">
+                <input type="text" id="customerName" placeholder="Nama Pemesan (opsional)">
+                <input type="text" id="customerNote" placeholder="Catatan pesanan / lokasi antar (opsional)">
+            </div>
+
+            <!-- DUA METODE CHECKOUT: WHATSAPP & WEBSITE CHECKOUT -->
+            <div class="cart-checkout-buttons">
+                <!-- 1. Tombol WhatsApp -->
+                <button class="btn btn-checkout-wa" id="btnCheckoutWhatsApp">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                        </path>
+                    </svg>
+                    <span>Checkout via WhatsApp</span>
+                </button>
+
+                <!-- 2. Tombol Checkout Website Langsung -->
+                <button class="btn btn-checkout-web" id="btnOpenWebCheckout">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <line x1="2" y1="10" x2="22" y2="10"></line>
+                    </svg>
+                    <span>Checkout di Website</span>
+                </button>
+            </div>
+
+            <div class="cart-extra-actions">
+                <button class="btn-clear-cart" id="btnClearCart">Kosongkan Keranjang</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MODAL 1: PENGATURAN NOMOR WHATSAPP -->
+    <div class="modal-overlay" id="waModalOverlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>⚙️ Pengaturan Nomor WhatsApp Toko</h3>
+                <button class="btn-close-modal" id="btnCloseWaModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-instruction">
+                    Tentukan nomor WhatsApp tujuan untuk menerima pesanan checkout dari website ini. Tersimpan secara
+                    otomatis di browser Anda.
+                </p>
+
+                <div class="form-group">
+                    <label for="waNumberInput">Nomor WhatsApp Tujuan</label>
+                    <div class="input-wa-wrapper">
+                        <span class="prefix-flag">🇮🇩</span>
+                        <input type="text" id="waNumberInput" placeholder="Contoh: 085754870448 atau 6285754870448">
+                    </div>
+                    <small class="help-text">Dapat diawali dengan 08... atau 628... (hanya angka).</small>
+                </div>
+
+                <div class="current-wa-preview">
+                    <span>Nomor saat ini:</span>
+                    <strong id="previewCurrentWa">6285754870448</strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btnCancelWaModal">Batal</button>
+                <button type="button" class="btn btn-primary" id="btnSaveWaNumber">Simpan Nomor</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: CHECKOUT WEBSITE LANGSUNG -->
+    <div class="modal-overlay" id="checkoutModalOverlay">
+        <div class="modal-card checkout-modal-card">
+            <div class="modal-header">
+                <h3>🛍️ Checkout Pesanan Website</h3>
+                <button class="btn-close-modal" id="btnCloseCheckoutModal">&times;</button>
+            </div>
+            <form id="webCheckoutForm">
+                <div class="modal-body">
+                    <div class="checkout-summary-box">
+                        <div class="checkout-summary-title">Rincian Pembelian</div>
+                        <div id="checkoutSummaryItems" class="checkout-items-preview">
+                            <!-- Injected by script.js -->
+                        </div>
+                        <div class="checkout-total-line">
+                            <span>Total Tagihan:</span>
+                            <strong id="checkoutModalTotal">Rp0</strong>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkoutBuyerName">Nama Lengkap Pemesan *</label>
+                        <input type="text" id="checkoutBuyerName" placeholder="Contoh: Dimas Aditya" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkoutBuyerPhone">Nomor WhatsApp Aktif *</label>
+                        <input type="tel" id="checkoutBuyerPhone" placeholder="Contoh: 08123456789" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkoutDeliveryMethod">Metode Pengambilan / Antar</label>
+                        <select id="checkoutDeliveryMethod">
+                            <option value="Ambil Langsung di Toko ITS (PKM Lt. 1)">Ambil Langsung di Stand ITS (PKM Lt.
+                                1)</option>
+                            <option value="Delivery / Antar ke Ruang Kelas / Gazebo">Delivery Antar ke Ruang Kelas /
+                                Gazebo Kampus</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkoutPaymentMethod">Metode Pembayaran</label>
+                        <select id="checkoutPaymentMethod">
+                            <option value="QRIS (BCA/Mandiri/GoPay/ShopeePay/Dana)">QRIS Instan (BCA, Mandiri, GoPay,
+                                ShopeePay, Dana)</option>
+                            <option value="Tunai / Cash di Tempat">Bayar Tunai / Cash di Tempat (COD)</option>
+                            <option value="Transfer Bank Mandiri / BCA">Transfer Bank (Mandiri / BCA)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkoutNotes">Catatan Tambahan (Opsional)</label>
+                        <textarea id="checkoutNotes" rows="2"
+                            placeholder="Contoh: Antar jam 12.00 ke Gedung B Ruang 204"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btnCancelCheckout">Batal</button>
+                    <button type="submit" class="btn btn-primary">Konfirmasi & Proses Pesanan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 3: INVOICE / RECEIPT PESANAN BERHASIL -->
+    <div class="modal-overlay" id="receiptModalOverlay">
+        <div class="modal-card receipt-modal-card">
+            <div class="receipt-header">
+                <div class="receipt-check-icon">✓</div>
+                <h3>Pesanan Berhasil Diterima!</h3>
+                <p>Terima kasih telah berbelanja di <strong>ITS (IT Solution)</strong>.</p>
+            </div>
+            <div class="receipt-body" id="receiptContent">
+                <!-- Injected via script.js -->
+            </div>
+            <div class="receipt-footer">
+                <button type="button" class="btn btn-secondary btn-sm" id="btnCopyReceipt">Salin Rincian
+                    Pesanan</button>
+                <button type="button" class="btn btn-primary" id="btnCloseReceipt">Selesai & Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTON (MOBILE CART) -->
+    <button class="fab-cart" id="fabCart" aria-label="Buka Keranjang">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="fab-badge" id="fabCartBadge">0</span>
+    </button>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
